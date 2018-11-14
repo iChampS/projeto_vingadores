@@ -1,0 +1,16 @@
+/**
+* Folha de estilo dos heróis do site Os Vingadores
+* @author Victor Guilherme
+* 14/11/2018
+*/
+
+.box-sub a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.jooj{
+	padding-top: 100px;
+	width: 100%;
+	margin: 0 auto;
+}

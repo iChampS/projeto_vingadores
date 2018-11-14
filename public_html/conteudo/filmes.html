@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- Favicon -->
+	<link rel="icon" href="../imagens/fav.png"> 
+	<title>Filmes - Os Vingadores</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Os Vingadores">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- Link com a folha do estilo carouse -->
+	<link rel="stylesheet" href="../css/estilo.css">
+	<!-- Link com a folha do estilo cards -->
+	<link rel="stylesheet" href="../css/cards.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- Estrutura principal -->
+	<div id="main">
+
+		<!-- Cabeçalho -->
+		<header>
+			<a href="../index.html"><img src="../imagens/logo.png" title="Os Vingadores" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- Menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (Desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<ul>
+				<li><a href="../index.html">Início</a></li>
+				<li><a href="#" class="Detalhes">Universo</a>
+					<ul>
+						<li><a href="integrantes.html">Integrantes</a></li>
+						<li><a href="filmes.html">Filmes</a></li>
+					</ul>
+				</li>
+				<li><a href="../sobre.html">Sobre</a></li>
+				<li><a href="../contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+		<!-- Conteúdo -->
+		<section class="Conteudo">
+			<div style="text-align: center; margin: 0; color: #FFFFFF">
+			<!-- W=950 H=350-->
+			<img src="../imagens/10.png" style="text-align: left; margin-top: 0; margin-bottom: 5%; width: 70%; height:70%" alt="Avengers">
+			</div>
+
+			<h2 style="text-align: center; color: #FFFFFF">Os Vingadores: The Avengers</h2><br>
+			<p style="text-align: center"><iframe class="play" src="https://www.youtube.com/embed/eOrNdBpGMv8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<br><br><h2 style="text-align: center; color: #FFFFFF">Vingadores: Era de Ultron</h2><br>
+			<p style="text-align: center"><iframe class="play" src="https://www.youtube.com/embed/tmeOjFno6Do" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+			<br><h2 style="text-align: center; color: #FFFFFF">Vingadores: Guerra Infinita</h2><br>
+			<p style="text-align: center"><iframe class="play" src="https://www.youtube.com/embed/6ZfuNTqbHE8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+
+		<!-- Rodapé -->
+		<footer>
+			<p>©2018 - Victor Guilherme</p>			
+		</footer>
+	</div>
+
+<script src="../js/menuresponsivo.js"></script>
+<script src="../js/fixamenu.js"></script>
+<script src="../js/removeclick.js"></script>
+
+</body>
+</html>

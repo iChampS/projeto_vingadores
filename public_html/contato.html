@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- Favicon -->
+	<link rel="icon" href="imagens/fav.png"> 
+	<title>Contato - Os Vingadores</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Os Vingadores">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Link com a folha do estilo carouse -->
+	<link rel="stylesheet" href="css/estilo.css">
+	<!-- Link com a folha do estilo cards -->
+	<link rel="stylesheet" href="css/cards.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- Estrutura principal -->
+	<div id="main">
+
+		<!-- Cabeçalho -->
+		<header>
+			<a href="index.html"><img src="imagens/logo.png" title="Os Vingadores" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- Menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (Desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="#" class="Detalhes">Universo</a>
+					<ul>
+						<li><a href="conteudo/integrantes.html">Integrantes</a></li>
+						<li><a href="conteudo/filmes.html">Filmes</a></li>
+					</ul>
+				</li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+	<!-- formulário de contato -->
+	<div id="contato"><br><br><br>
+		<h1 class="g0">Contato</h1><br><br>
+		<form action="formulario.php" method="POST">
+			<input type="text" name="nome" placeholder="Nome">
+			<input type="text" name="email" placeholder="E-mail">
+			<textarea name="mensagem" placeholder="Mensagem"></textarea>
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+	<!-- Rodapé -->
+		<footer>
+			<p>©2018 - Victor Guilherme</p>			
+		</footer>
+	</div>
+
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>
+
+</body>
+</html>

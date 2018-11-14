@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- Favicon -->
+	<link rel="icon" href="imagens/fav.png"> 
+	<title>Os Vingadores</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Os Vingadores">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Link com a folha do estilo carouse -->
+	<link rel="stylesheet" href="css/estilo.css">
+	<!-- Link com a folha do estilo cards -->
+	<link rel="stylesheet" href="css/cards.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- Estrutura principal -->
+	<div id="main">
+
+		<!-- Cabeçalho -->
+		<header>
+			<a href="index.html"><img src="imagens/logo.png" title="Os Vingadores" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- Menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (Desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="#" class="Detalhes">Universo</a>
+					<ul>
+						<li><a href="conteudo/integrantes.html">Integrantes</a></li>
+						<li><a href="conteudo/filmes.html">Filmes</a></li>
+					</ul>
+				</li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+		<!-- Início do carousel -->
+	<div class="slideshow-container">
+			<div class="mySlides fade">  			
+  			<img src="imagens/1.jpg" style="width:100%" alt="Vingadores - Vermelho">  			
+		</div>
+
+		<div class="mySlides fade"> 			
+  			<img src="imagens/2.jpg" style="width:100%" alt="Vingadores - Azul"> 			
+		</div>
+
+		<div class="mySlides fade">  			
+  			<img src="imagens/3.jpg" style="width:100%" alt="Vingadores - Verde">  			
+		</div>
+
+		<div class="mySlides fade">  			
+  			<img src="imagens/4.jpg" style="width:100%" alt="Vingadores - Amarelo">  			
+		</div>
+
+		<div class="mySlides fade">  			
+  			<img src="imagens/5.jpg" style="width:100%" alt="Vingadores - Roxo">  			
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		
+
+		<div style="text-align:center">
+  			<span class="dot" onclick="currentSlide(1)"></span> 
+  			<span class="dot" onclick="currentSlide(2)"></span> 
+  			<span class="dot" onclick="currentSlide(3)"></span> 
+  			<span class="dot" onclick="currentSlide(4)"></span>
+  			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		<!-- Fim do carousel -->
+
+		<section id="heading">
+			<img src="imagens/stbr.png" style="" alt="Stan Lee"><br><br><br>
+			<h2><i><b><span id="html5">"Com grandes poderes, vêm grandes responsabilidades!"</span><br> <span id="css3">Stan Lee: 1922 - 2018</span></b></i></h2>
+		</section>
+
+		<!-- Rodapé -->
+		<footer>
+			<p>©2018 - Victor Guilherme</p>			
+		</footer>
+	</div>
+
+	<!-- Redes Sociais -->
+		<div class="social-bar">
+			<a href="https://www.facebook.com/MarvelBR" class="icon icon-facebook" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
+			<a href="https://www.instagram.com/marvel/" class="icon icon-instagram" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+			<a href="https://twitter.com/marvel" class="icon icon-twitter" target="_blank"><img src="imagens/twitter.png" alt="Twitter"></a>
+			<a href="https://www.youtube.com/channel/UCItRs-h8YU1wRRfP637614w" class="icon icon-youtube" target="_blank"><img src="imagens/youtube.png" alt="YouTube"></a>
+		</div>
+	
+<script src="js/carousel.js"></script>
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>
+
+</body>
+</html>

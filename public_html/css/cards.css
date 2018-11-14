@@ -1,0 +1,149 @@
+/**
+* Folha de estilo cards do site Os Vingadores
+* @author Victor Guilherme
+* 14/11/2018
+*/
+
+/*************** Importando Fonts ***************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-align: center;
+	flex-direction: row;
+}
+.box{
+	width: 270px;
+	height: 400px;
+	box-shadow: 0px 0px 7px 3px gray;
+	/* text-align: center; */
+	margin: 25px auto;
+	transition: all 0.5s;
+}
+.box:hover{
+	filter: brightness(1.2);
+}
+h3{
+	margin-top: 10px;
+	font-size: 16px;
+	color: #64DD17;
+}
+.box-sub{
+	width: 270px;
+	height: 90px;
+	background-color: rgba(0,0,0,0.5);
+	line-height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 120px;
+	font-size: 25px;
+	font-weight: 500;
+	color: white;
+}
+
+.bg1{
+	background: url(../imagens/ferro.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg2{
+	background: url(../imagens/capitao.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg3{
+	background: url(../imagens/viuva.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg4{
+	background: url(../imagens/hulk.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg5{
+	background: url(../imagens/thor.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg6{
+	background: url(../imagens/aranha.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg7{
+	background: url(../imagens/estranho.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg8{
+	background: url(../imagens/feiticeira.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg9{
+	background: url(../imagens/visao.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg10{
+	background: url(../imagens/estrelas.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg11{
+	background: url(../imagens/gamora.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg12{
+	background: url(../imagens/bucky.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg13{
+	background: url(../imagens/pantera.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg14{
+	background: url(../imagens/falcao.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg15{
+	background: url(../imagens/groot.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg16{
+	background: url(../imagens/maquina.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg17{
+	background: url(../imagens/nebula.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg18{
+	background: url(../imagens/wong.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg19{
+	background: url(../imagens/okoye.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg20{
+	background: url(../imagens/drax.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg21{
+	background: url(../imagens/shuri.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg22{
+	background: url(../imagens/mantis.jpg) no-repeat center center;
+	background-size: cover;
+}
+.bg23{
+	background: url(../imagens/rocket.jpg) no-repeat center center;
+	background-size: cover;
+}

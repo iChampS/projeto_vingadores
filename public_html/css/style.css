@@ -1,0 +1,493 @@
+/**
+* Folha de estilo principal do site Os Vingadores
+* @author Victor Guilherme
+* 14/11/2018
+*/
+
+/*************** Importando Fonts ***************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+/*************** Principal ***************/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-size: cover; /* Manter o tamanho de forma responsiva */
+	font-size: 1em; /* 1 em = 16px */
+	/* background-color: #FFFFFF; */
+}   
+
+#main{
+	background-color: #000000;
+	margin: auto; /* Centralizar a div */
+}
+
+/*************** Cabeçalho ***************/
+header{
+	width: 100%;
+	height: 150px;
+	margin-bottom: -15px;
+}
+
+header img{
+	width: 230px;
+	height: 180px;
+	margin-top: -30px;
+	margin-left: 40px;
+}
+
+/*************** Menu ***************/
+
+nav{
+	width: 100%;
+	max-width: 100%;	
+	position: absolute;
+	z-index: 3;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav > ul > li{
+	float: left;
+	width: 25%; /* 4 elementos do menu primário */
+
+}
+
+nav > ul > li > a{
+	font-size: 1.125em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 15px;
+	display: block;
+	text-align: center; 
+	background-color: #D50000;
+}
+
+nav ul li a:hover{
+	background-color: #000000;
+	transition: all 0.3s; /* Efeito transição (0 a 1) */
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+}
+
+div img a{
+	width: 400px;
+	height: 180px;
+}
+
+/* Desenhando um triângulo no CSS */
+.Detalhes:after{ /* Atributo after (Após o conteúdo)*/
+	content:''; /* content: Insere um conteúdo no CSS */
+	border: 5px solid transparent;
+	/*border-left-color: #FF0000;*/
+	/*border-right-color: #00FF00;*/
+	/*border-bottom-color: #0000FF;*/
+	border-top-color: #E8E8E8;
+	/* alinhamento */
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+.Mobile{
+	display: none;
+}
+
+/* Classe usada pelo JS para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;	
+}
+
+/*************** Conteúdo em Destaque - Início ***************/
+
+/***** Banner *****/
+#banner{
+	margin-top: 50px;
+	max-width: 100%;
+	height: 350px;
+	/***** Usado para flexibilizar o layout *****/
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+#banner img{
+	filter: brightness(90%);
+}
+
+#banner h1{
+	position: absolute;
+	max-width: 1024px;
+	text-align: center;
+	color: #ffffff;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4em;
+	text-transform: uppercase; /* Maiúsculo */
+}
+
+/***** Heading *****/
+#heading{
+	width: 80%;
+	margin: 0 auto;
+	padding: 35px;
+	text-align: center;
+}
+
+#heading h2{
+	text-align: center;
+	font-weight: 800;
+}
+
+#html5{
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+#css3{
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+#htss3{
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+/*************** Redes Sociais ***************/
+.social-bar{
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon{
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook{
+	background-color: #3B579D;
+}
+
+.icon-instagram{
+	background-color: #3F60A5;
+}
+
+.icon-youtube{
+	background-color: #FF0000;
+}
+
+.icon-twitter{
+	background-color: #1DA1F2;
+}
+
+.icon:first-child{
+	border-radius: 0.5rem 0 0 0;
+}
+
+.icon:last-child{
+	border-radius: 0 0 0 0.5rem;
+}
+
+.icon:hover{
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/*************** Formulário de contato ***************/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #D50000;
+	margin-bottom: 20px;	
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #D50000;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #D50000;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	padding: 10px 25px 10px 25px;
+	color: #FFFFFF;
+}
+
+.g0{
+	color: #FFFFFF;
+}
+
+/*************** Conteúdo ***************/
+.Conteudo{
+	padding-top: 100px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.g2{
+	color: #FFFFFF;
+}
+
+.g3{
+	color: #FFFFFF;
+}
+
+.g4{
+	color: #FFFFFF;
+}
+
+.g6{
+	color: #FFFFFF;
+}
+
+.g5 img{
+	width: 128px;
+	height: 128px;
+}
+
+/*************** Rodapé ***************/
+footer{
+	width: 99.9%;
+	background-color: #D50000;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 1em;
+}
+
+/*************** YouTube ***************/
+iframe{
+	width: 560px; 
+	height: 310px;
+}
+
+.video{
+	frameborder: 0;
+}
+
+/*************** Tratamento responsivo ***************/
+
+/*************** Imagens do site ***************/
+img {
+	max-width: 100%; /* Todas as imagens do site ficam responsivas */
+}
+
+/*************** 1º Ponto de quebra ***************/
+@media screen and (max-width: 1024px){
+	/***** principal ******/
+		body{
+		margin: 0px;
+	}
+		#main{ 
+		margin-top: 0px;
+	}
+	#banner{
+		margin-top: 10px;
+	}
+}
+
+/*************** 2º Ponto de quebra ***************/
+@media screen and (max-width: 768px){
+	#banner{
+		margin-top: -20px;		
+	}
+}
+
+/*************** 3º Ponto de quebra ***************/
+@media screen and (max-width: 768px){
+	#banner{
+		margin-top: -20px;		
+	}
+}
+
+/*************** 4º Ponto de quebra ***************/
+@media screen and (max-width: 768px){
+	#banner{
+		margin-top: -45px;
+		font-size: 0.550em;
+	}
+}
+
+/*************** Smartphone ***************/
+@media screen and (max-width: 480px){
+	
+	/***** Cabeçalho *****/
+	header{
+		margin-bottom: 0;
+		text-align: center; /* Centraliza tudo */
+	}
+
+	header img{
+		margin-top: 0;
+		margin-left: 0;
+	}
+	
+	/***** Menu *****/
+	.Mobile{
+		display: block;
+		background-color: #D50000;
+		color: #FFFFFF;
+		text-decoration: none;
+		padding: 15px;
+	}
+
+.social-bar{
+	position: fixed;
+	right: 0;
+	top: 55%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+	width: 40px;
+	height: 170px;
+}
+
+.icon{
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+	footer{
+	width: 99.9%;
+	background-color: #D50000;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 1em;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+}
+
+	nav > ul > li{
+		float: none;
+		width: 100%;
+	}
+
+	nav ul{
+		width: 100%;
+		display: none;
+	}
+	
+	/***** Ajuste ******/
+	nav ul li a{
+		text-align: left;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* Remover efeito de transição */		
+	}
+
+	nav li ul li{
+		background-color: #044364;
+	}
+
+	nav li ul li a{
+		background-color: #8B0000;
+		padding-left: 40px;
+	}
+
+	/***** IMPORTANTE para UX no dispositivo mobile,
+	não exibir o 2º nível do menu enquanto conteúdo
+	não for clicado	*****/
+	nav li:hover ul{
+		display: none;
+	}
+
+	/***** Banner *****/
+	#banner{
+		margin-top: 118px;
+		height: 0;			
+	}
+
+	#banner h1{		
+		font-size: 1.5em;	
+		text-align: center;	
+	}
+
+	/***** Heading *****/
+	#heading{
+		width: 90%;
+		padding: 25px;
+		margin-top: 60px;
+	}
+
+	#heading h2{
+		font-size: 1.2em;
+	}
+
+	/***** Blocos *****/
+	#destaque{
+		max-width: 315px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.blocos{
+		width: 100%;
+		height: 390px;
+		float: none;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	iframe{
+		width: 350px;
+		height: 230px;
+	}
+
+	.jooj img{
+		width: 100%;
+		height: auto;
+	}
+
+	#heading img{
+		width: 70%;
+		height: auto;
+	}
+}
